@@ -52,7 +52,7 @@ def main(file_name,NJOBS=1000,job=0):
 
     sat_info=np.stack((sat_pos,sat_vel,track_dir))
     np.save("../sat_info_"+str(job)+".npy",sat_info)
-    gal_coord=np.stack((l,b))
+    gal_coord=np.stack((time,l,b))
     np.save("../gal_coord_"+str(job),gal_coord)
 
 
