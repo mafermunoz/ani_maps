@@ -14,7 +14,7 @@ for i,file  in enumerate (txt):
     else:
 
         dummy=np.load(file)
-        f=np.vstack((f,dummy))
+        f=np.stack((f,dummy),axis=1)
         print(f.shape)
 
 print(f.shape)
