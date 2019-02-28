@@ -23,6 +23,10 @@ for i in range (NJOBS):
 np.save(file_path+file_name,f)
 np.save(file_path+file_name2,d)
 
-random_map=[[]for i in range (NMAPS)]
 
-#for i in range (NMAPS):
+random_map=[[]for i in range (NMAPS)]
+pos=np.arange(0,len(d),1)
+for i in range (NMAPS):
+    random_map[i]=np.random.shuffle(pos)
+
+np.save(file_path+"ntuples_10_25_shuffle_pos.npy",random_map)
