@@ -21,8 +21,8 @@ def main(file_name,NJOBS=1000,job=0):
     myTree=f.Get('ani')
     n_entries=myTree.GetEntries()
     ev_step=np.true_divide(n_entries,int(NJOBS))
-    e_min=ev_step*int(job)
-    e_max=ev_step+ev_step*int(job)
+    e_min=ev_step*(int(job)-1)
+    e_max=ev_step*int(job)
     print n_entries
     l=np.array([])
     b=np.array([])
