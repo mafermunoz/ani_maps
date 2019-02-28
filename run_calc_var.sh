@@ -1,8 +1,8 @@
 #!/bin/bash
 
-NJOBS=10000
+NJOBS=1000
 OUTPATH="/beegfs/dampe/users/mmunozsa/anisotripy/maps_calc/"
-for i in {1..10000}
+for i in {1..1000}
 do
     OUTF=$OUTPATH"gal_coord_$i.npy"
     if [ ! -f ${OUTF} ]; then
