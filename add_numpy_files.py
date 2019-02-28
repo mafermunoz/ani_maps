@@ -15,6 +15,6 @@ for i,file  in enumerate (txt):
 
         dummy=np.load(file)
         f=np.stack((f,dummy))
-        print(f.shape())
+        print(f.shape)
 
-print(f.shape())
+print(f.shape)
