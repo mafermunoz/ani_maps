@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --partition=rhel6-short
+#SBATCH --partition=rhel6-long
 #SBATCH --ntasks=1
 #SBATCH --mem=20G
 #SBATCH --job-name=ntSelec
