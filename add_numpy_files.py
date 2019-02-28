@@ -14,7 +14,7 @@ for i,file  in enumerate (txt):
     else:
 
         dummy=np.load(file)
-        f=np.append((f,dummy))
+        f=np.append(f,dummy)
         print(f.shape)
 
 print(f.shape)
