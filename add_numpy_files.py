@@ -23,9 +23,9 @@ for i in range (NJOBS):
 np.save(file_path+file_name,f)
 np.save(file_path+file_name2,d)
 
-
+sa,sb=f.shape
 random_map=[[]for i in range (NMAPS)]
-pos=np.arange(0,len(d),1)
+pos=np.arange(0,sb,1)
 for i in range (NMAPS):
     random_map[i]=np.random.shuffle(pos)
 
