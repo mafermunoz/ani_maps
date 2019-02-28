@@ -53,9 +53,10 @@ def main(file_name,NJOBS=1000,job=0):
         elif (i>=e_max):
             continue
 
-    sat_info=np.stack((list_e,sat_pos,sat_vel,track_dir))
+    sat_info=np.stack((sat_pos,sat_vel,track_dir))
     np.save("../"+name_file+"sat_info_"+str(job)+".npy",sat_info)
-    gal_coord=np.stack((list_e,time,l,b))
+    gal_coord=np.stack((list_e,lsl
+    time,l,b))
     np.save("../"+name_file+"gal_coord_"+str(job)+".npy",gal_coord)
 
 
