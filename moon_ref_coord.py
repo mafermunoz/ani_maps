@@ -9,8 +9,5 @@ data_raw = np.load('/beegfs/dampe/users/mmunozsa/anisotripy/maps_calc/ntuples_10
 DAMPE_Start=Time("2013-01-01",scale='utc')
 Time_data=data_time=DAMPE_Start+data_raw[1]*u.second
 dampe_coordinates=SkyCoord(data_raw[2]*u.deg,data_raw[3]*u.deg,frame='galactic')
-dampe_event_ra_dec=dampe_coordinates.
-
-
-
- 
+dampe_event_ra=dampe_coordinates.ra
+dampe_event_dec=dampe_coordinates.dec
