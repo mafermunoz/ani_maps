@@ -9,7 +9,8 @@ for i in range (len(a[1])):
     t=TVector3(a[2][i][0],a[2][i][1],a[2][i][2])
     track_tetha.append(t.Theta())
     track_phi.append(t.Phi())
-    print i
+    if(i%1000==0):
+        print i
 
 
 track_info=np.stack((track_phi,track_tetha))
