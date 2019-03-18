@@ -8,7 +8,8 @@ track_phi=[]
 for i in range (len(a[1])):
     t=TVector3(a[2][i][0],a[2][i][1],a[2][i][2])
     track_tetha.append(t.Theta())
-    trac_phi.append(t.Phi())
+    track_phi.append(t.Phi())
+    print i
 
 
 track_info=np.stack((track_phi,track_tetha))
