@@ -2,7 +2,7 @@ import numpy as np
 import ROOT
 from ROOT import TVector3
 
-a=np.load("ntuples_10_25_ani_sat_info.npy")
+a=np.load("../ntuples_10_25_ani_sat_info.npy")
 track_tetha=[]
 track_phi=[]
 for i in range (len(a[1])):
@@ -12,4 +12,4 @@ for i in range (len(a[1])):
 
 
 track_info=np.stack((track_phi,track_tetha))
-np.save("ntuples_10_25_ani_track_info.npy",track_info)
+np.save("../ntuples_10_25_ani_track_info.npy",track_info)
